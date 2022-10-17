@@ -1,0 +1,10 @@
+<form method="POST" action="/prehistoric/<%= preId %>/?_method=PUT">
+    <label for="name">Name</label>
+    <input type="text" name="name"
+    value="<%= pre.name %>"> 
+
+    <label for="type">Type</label>
+    <input type="text" name="type"
+    value="<%= pre.type %>"> 
+    <input type="submit" value="Update Creatures">
+</form>

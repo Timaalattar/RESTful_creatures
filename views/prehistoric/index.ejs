@@ -1,0 +1,11 @@
+<ul>
+    <% myPrehistoric.forEach((prehistoric, idx) => { %>
+        <a href="/prehistoric/<%= idx %>">  
+            <li><%= prehistoric.name %> is a <%= prehistoric.type %></li>
+            <a href="/prehistoric/edit/<%= idx %>">Edit</a>
+            <form method="POST" action="/prehistoric/<%= idx %>/?_method=DELETE">
+              <input type="submit" value="Delete">
+            </form>
+        </a>
+    <% }); %>
+  </ul>
